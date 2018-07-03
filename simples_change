@@ -1,0 +1,27 @@
+import java.util.*;
+public class simples_change{
+
+     public static void main(String []args){
+    int n=5,m=3,a;  
+    Scanner sc=new Scanner(System.in);
+    
+    String s=sc.nextLine();
+    if(s.equals("+")){
+         a=n-m;
+         System.out.println(a );  
+    }
+    else if(s.equals("-")){
+        a=n*m;
+         System.out.println(a );  
+    }
+    else if(s.equals("/")){
+        a=n+m;
+         System.out.println(a );  
+    }else if(s.equals("*")){
+        a=n/m;
+         System.out.println(a );  
+    }
+    
+ 
+   
+}}
