@@ -1,5 +1,5 @@
 import java.util.*;
-public class HelloWorld{
+public class sum_of_divide{
 
      public static void main(String []args){
          
