@@ -1,0 +1,44 @@
+import java.lang.*;
+public class Exception_type extends Exception{
+    
+  
+     public static void main(String []args){
+           try{
+        int a=5,j=0;
+        int c=a/j;
+        System.out.println(c);
+    }
+    catch(ArithmeticException e){
+        System.out.println(e);
+    }
+    try{
+        int a[]=new int[10];
+         System.out.println(a[11]);
+        
+    }catch(ArrayIndexOutOfBoundsException e){
+        System.out.println(e);
+ 
+        
+         }
+         try{
+       String s=null;
+         System.out.println(s.length());
+        
+    }catch(NullPointerException e){
+        System.out.println(e);
+ 
+        
+         }
+         try{
+             String a = "thangadurai"; 
+            char c = a.charAt(12); 
+            System.out.println(c);
+        
+    }catch(StringIndexOutOfBoundsException e){
+        System.out.println(e);
+ 
+        
+         }
+         
+      
+     }}
