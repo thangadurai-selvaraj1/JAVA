@@ -1,0 +1,42 @@
+public class HCF
+{
+ void getHcf(int x[])
+ {
+  int min = x[0],count = 1,hcf = 1;
+
+  
+  System.out.println("The array is:- ");
+  
+  for(int i = 0; i < x.length; i++)
+  {
+   System.out.print(x[i] + "\t");
+  }
+  
+
+  
+  for(int i = 1; i <= min; i++)
+  {
+   for(int j = 0; j < x.length; j++)
+   {
+    if(x[j] % i == 0)
+    {
+     count++;
+     if(count == x.length)
+     {
+      hcf = hcf * i;
+     }
+    }
+   }
+   count = 0;
+  }
+  
+  System.out.println("\n\nHCF is:- " + hcf);
+ }
+ 
+ public static void main(String arr[])
+ {
+  HCF hcf = new HCF();
+  int a[]=new int[]{2,4,8};
+  hcf.getHcf(a);
+ }
+}
