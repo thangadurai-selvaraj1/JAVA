@@ -1,0 +1,21 @@
+
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		int a[]={1,2,3,4};
+		int l;
+		int c[]=new int[a.length];
+		for(int i=0;i<a.length;i++){
+			l=1;
+			for(int j=0;j<a.length;j++){
+				
+				if(j!=i)
+				l=l*a[j];
+			}
+			System.out.println(l);
+			
+		}
+		// your code goes here
+	}
+}
